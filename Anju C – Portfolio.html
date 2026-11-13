@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anju C – Assistant Professor of Chemistry</title>
+<meta name="description" content="Portfolio of Anju C, Assistant Professor of Chemistry at Rajagiri School of Engineering & Technology, Kochi.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<style>
+:root{
+  --bg:#F5F7F8; --surface:#FFFFFF; --ink:#16212E; --muted:#51606F; --line:#D5DCE2;
+  --accent:#C2185B; --on-accent:#FFFFFF; --blue:#2A5C8F;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1720; --surface:#17212C; --ink:#E8EDF2; --muted:#A3B0BD; --line:#2B3846;
+    --accent:#F06292; --on-accent:#0F1720; --blue:#7FB0E3; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1720; --surface:#17212C; --ink:#E8EDF2; --muted:#A3B0BD; --line:#2B3846;
+  --accent:#F06292; --on-accent:#0F1720; --blue:#7FB0E3; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4.5rem);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+
+header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.5rem}
+.brand{font:600 1.25rem var(--serif);color:var(--ink);text-decoration:none}
+nav{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem;padding:.4rem .65rem;border-radius:.4rem;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+nav a[aria-current="true"]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;padding:4.5rem 0 3.5rem}
+.hero h1{font:500 clamp(2.6rem,6vw,4.25rem)/1.05 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
+.role{font:500 1.25rem var(--serif);color:var(--blue);margin:0 0 1.25rem}
+.lede{max-width:34rem;margin:0 0 1.5rem;color:var(--muted)}
+.facts{list-style:none;margin:0 0 1.75rem;padding:0;display:grid;gap:.35rem}
+.facts li{padding-left:1.1rem;position:relative}
+.facts li::before{content:"";position:absolute;left:0;top:.7em;width:.5rem;height:.5rem;border-radius:50%;background:var(--accent)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;font:600 1rem var(--sans);padding:.7rem 1.2rem;border-radius:.5rem;border:2px solid var(--ink);color:var(--ink);background:transparent;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn:hover{border-color:var(--accent)}
+
+.tile{width:11.5rem;aspect-ratio:1;border:3px solid var(--ink);border-radius:.4rem;background:var(--surface);display:grid;place-content:center;text-align:center;transition:background .35s,color .35s,border-color .35s}
+.tile b{font:500 5.5rem/1 var(--serif)}
+.tile span{font:500 1rem var(--sans);color:var(--muted);margin-top:.25rem;transition:color .35s}
+.tile:hover{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.tile:hover span{color:var(--on-accent)}
+
+section.block{display:grid;grid-template-columns:11rem 1fr;gap:2rem;padding:2.75rem 0;border-top:1px solid var(--line)}
+section.block>h2{font:500 1.6rem/1.2 var(--serif);margin:0}
+h3{font:600 1.1rem/1.35 var(--sans);margin:0}
+.meta{color:var(--muted);font-size:.95rem;margin:.15rem 0 0}
+.tl{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:2px solid var(--line)}
+.tl li{position:relative;padding-bottom:1.75rem}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:calc(-1.5rem - 7px);top:.45rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.25rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.rows li:first-child{padding-top:0}
+.rows li:last-child{border-bottom:0;padding-bottom:0}
+.score{font:500 1.15rem var(--serif);text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.25rem}
+.chip{font:500 .95rem var(--sans);padding:.35rem .85rem;border-radius:2rem;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.rows li[hidden]{display:none}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.tags li{border:1.5px solid var(--ink);border-radius:.3rem;padding:.3rem .8rem;font-weight:500;background:var(--surface)}
+.contact dl{margin:0 0 1.25rem;display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.25rem}
+.contact dt{color:var(--muted)} .contact dd{margin:0}
+#copied{margin-left:.5rem;color:var(--muted);font-size:.95rem}
+footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.95rem}
+
+@media (max-width:48rem){
+  .hero{grid-template-columns:1fr;gap:2rem;padding-top:2.5rem}
+  .tile{order:-1;width:8.5rem}.tile b{font-size:4rem}
+  section.block{grid-template-columns:1fr;gap:1.25rem}
+  .rows li{grid-template-columns:1fr}.score{text-align:left}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">Anju C</a>
+    <nav aria-label="Sections">
+      <a href="#experience">Experience</a><a href="#education">Education</a><a href="#research">Research</a><a href="#events">Conferences</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Anju C</h1>
+      <p class="role">Assistant Professor of Chemistry</p>
+      <p class="lede">I teach chemistry at Rajagiri School of Engineering &amp; Technology in Kochi. My background is in physical and polymer chemistry, and I’m looking for teaching and research roles where I can keep learning and share what I know.</p>
+      <ul class="facts">
+        <li>Second position in M.Sc. Physical Chemistry</li>
+        <li>UGC-NET qualified, rank 55</li>
+      </ul>
+      <div class="btns">
+        <a class="btn primary" href="mailto:anju.chonat@gmail.com">Email me</a>
+        <a class="btn" href="#experience">See experience</a>
+      </div>
+    </div>
+    <div class="tile" aria-hidden="true"><b>Ac</b><span>Anju C</span></div>
+  </div>
+
+  <section class="block" id="experience">
+    <h2>Experience</h2>
+    <ol class="tl">
+      <li>
+        <h3>Assistant Professor, Chemistry</h3>
+        <p class="meta">Department of Basic Sciences &amp; Humanities, Rajagiri School of Engineering &amp; Technology, Kochi<br>July 2012 – present</p>
+      </li>
+      <li>
+        <h3>Assistant Professor (part-time), Chemistry</h3>
+        <p class="meta">Department of Basic Sciences &amp; Humanities, Rajagiri School of Engineering &amp; Technology, Kochi<br>July 2011 – June 2012</p>
+      </li>
+      <li>
+        <h3>Lecturer in Polymer Chemistry (self-financed)</h3>
+        <p class="meta">St. Mary’s College, Thrissur<br>June – December 2010</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block" id="education">
+    <h2>Education</h2>
+    <ul class="rows">
+      <li><div><h3>M.Sc. Chemistry (Physical Chemistry)</h3><p class="meta">School of Chemical Sciences, Mahatma Gandhi University, Kottayam · July 2009</p></div><div class="score">8.11 / 10 CGPA</div></li>
+      <li><div><h3>B.Sc. Chemistry</h3><p class="meta">Vimala College, Thrissur, Calicut University · Subsidiaries: Physics, Mathematics · April 2007</p></div><div class="score">94.3%</div></li>
+      <li><div><h3>Plus Two</h3><p class="meta">St. Raphael’s C.G.H.S.S., Ollur, Thrissur · Chemistry, Physics, Biology, Mathematics · February 2004</p></div><div class="score">90.3%</div></li>
+      <li><div><h3>SSLC</h3><p class="meta">St. Joseph’s C.G.H.S.S., Thrissur · January 2002</p></div><div class="score">87.5%</div></li>
+    </ul>
+  </section>
+
+  <section class="block" id="research">
+    <h2>Research</h2>
+    <div>
+      <h3>Studies on Carbon–Phenolic and Carbon–Carbon Composites</h3>
+      <p class="meta">Vikram Sarabhai Space Centre, Trivandrum · January – June 2009</p>
+      <p class="meta">Guides: Dr. Korah Bina Catherine, Head, Thermal Analysis and Chromatography Section; Dr. Sasidharan Achary, former Head, Analytical and Spectroscopy Division.</p>
+      <h3 style="margin:1.75rem 0 .75rem">Areas of interest</h3>
+      <ul class="tags"><li>Polymer chemistry</li><li>Organic chemistry</li><li>Physical chemistry</li></ul>
+    </div>
+  </section>
+
+  <section class="block" id="events">
+    <h2>Conferences &amp; workshops</h2>
+    <div>
+      <div class="chips" role="group" aria-label="Filter by type">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="conference" aria-pressed="false">Conferences</button>
+        <button class="chip" data-filter="programme" aria-pressed="false">Workshops &amp; programmes</button>
+      </div>
+      <ul class="rows" id="eventList">
+        <li data-type="programme"><div><h3>Academic Retreat Programme</h3><p class="meta">Christ University, Bangalore</p></div><div class="score">25–27 March 2013</div></li>
+        <li data-type="programme"><div><h3>Faculty development programme: Applications of Mathematics</h3><p class="meta">Rajagiri School of Engineering &amp; Technology</p></div><div class="score">3–15 December 2012</div></li>
+        <li data-type="conference"><div><h3>ICBC-2008, International Conference on Polymer Blends and Composites</h3><p class="meta">Mahatma Gandhi University, Kottayam</p></div><div class="score">22–24 September 2008</div></li>
+        <li data-type="conference"><div><h3>ICAM-2008, International Conference on Advanced Materials</h3><p class="meta">Mahatma Gandhi University, Kottayam</p></div><div class="score">18–21 February 2008</div></li>
+        <li data-type="programme"><div><h3>Workshop on science capacity building</h3><p class="meta">Sponsored by the Foundation for Capacity Building in Science (FCBS), Trivandrum, and JNCASR, Bangalore</p></div><div class="score"></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block contact" id="contact">
+    <h2>Contact</h2>
+    <div>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:anju.chonat@gmail.com">anju.chonat@gmail.com</a></dd>
+        <dt>Phone</dt><dd><a href="tel:+919995509465">+91 99955 09465</a></dd>
+        <dt>Location</dt><dd>Kochi, Kerala, India</dd>
+        <dt>Languages</dt><dd>English, Malayalam</dd>
+        <dt>Outside work</dt><dd>Dance, sports, sketching, travelling and music</dd>
+      </dl>
+      <button class="btn" id="copyEmail" type="button">Copy email address</button><span id="copied" role="status"></span>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© Anju C</div></footer>
+
+<script>
+// Filter conferences and workshops
+(function(){
+  var chips=document.querySelectorAll('.chip'), items=document.querySelectorAll('#eventList li');
+  chips.forEach(function(chip){
+    chip.addEventListener('click',function(){
+      var f=chip.dataset.filter;
+      chips.forEach(function(c){c.setAttribute('aria-pressed',String(c===chip));});
+      items.forEach(function(li){li.hidden=!(f==='all'||li.dataset.type===f);});
+    });
+  });
+})();
+
+// Highlight the current section in the nav
+(function(){
+  var links={}, nav=document.querySelectorAll('nav a');
+  nav.forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+  if(!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        nav.forEach(function(a){a.removeAttribute('aria-current');});
+        links[e.target.id].setAttribute('aria-current','true');
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  Object.keys(links).forEach(function(id){var s=document.getElementById(id); if(s) io.observe(s);});
+})();
+
+// Copy email address
+(function(){
+  var btn=document.getElementById('copyEmail'), msg=document.getElementById('copied');
+  btn.addEventListener('click',function(){
+    var email='anju.chonat@gmail.com';
+    var done=function(ok){msg.textContent=ok?'Copied.':'Copy blocked. Select the address above instead.';setTimeout(function(){msg.textContent='';},2500);};
+    try{ navigator.clipboard.writeText(email).then(function(){done(true);},function(){done(false);}); }
+    catch(e){ done(false); }
+  });
+})();
+</script>
+</body>
+</html>
